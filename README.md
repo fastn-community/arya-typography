@@ -1,25 +1,9 @@
 # Welcome to your [FASTN site](https://fastn.io/)
 
-FASTN Font Typography Template Repo
+FASTN Font Typography for [Arya Font](https://fastn-community.github.io/arya-font)
 
 
 
-## 🚀 Project Structure
-
-Inside of your FASTN project, you'll see the following folders and files:
-
-```
-/
-├── .build/
-│   └── index.html
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│   	
-├── FASTN.ftd
-├── index.ftd
-└── README.md
-```
 
 ## 🧞 Commands
 
