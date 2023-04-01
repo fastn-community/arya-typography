@@ -144,11 +144,11 @@ contain multiple pagragraphs, lists and any markdown format content.
 The `wrap` attribute allows adding child components to `page` component. You can
 add any other component inside `page`.
 
-`import` above `my-ds.ftd` file into fastn package `index.ftd` file and use
-`page` component: 
+Click on download icon on above code snippet `my-ds.ftd` file will be
+downloaded. 
 
 -- ds.rendered:
-download: index.ftd
+download: types.ftd
 
 -- ds.rendered.input:
 
@@ -196,6 +196,13 @@ color: $inherited.colors.text
 -- end: ds.rendered
 
 -- ds.markdown:
+
+Click on download icon on above code snippet `types.ftd` file will be
+downloaded, add previously downloaded `my-ds.ftd` and `types.ftd` inside
+`fastn` package. Run `fastn serve`, load localhost web page on browser.
+
+e.g. `http://127.0.0.1:8001/types` You will see the above page component using
+`arya-font-typography` types applied to `inherited` types.
 
 Done! isn't it simple? Try this and don't forget to jump on our [Discord](https://discord.gg/bucrdvptYd)
 
