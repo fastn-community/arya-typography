@@ -199,10 +199,11 @@ color: $inherited.colors.text
 
 Click on download icon on above code snippet `types.ftd` file will be
 downloaded, add previously downloaded `my-ds.ftd` and `types.ftd` inside
-`fastn` package. Run `fastn serve`, load localhost web page on browser.
+`fastn` package. Update `<your-fastn-package-name>` with your `fastn.package`
+name and run `fastn serve`, load localhost web page on browser.
 
-e.g. `http://127.0.0.1:8001/types` You will see the above page component using
-`arya-font-typography` types applied to `inherited` types.
+e.g. `http://127.0.0.1:8001/types` You will see the `page` component using
+`arya-font-typography` `types` applied to `inherited` types.
 
 Done! isn't it simple? Try this and don't forget to jump on our [Discord](https://discord.gg/bucrdvptYd)
 
