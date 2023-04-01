@@ -90,6 +90,8 @@ Done! `arya-font-typography` is now added. Lets define a `page` component:
 lang: ftd
 download: my-ds.ftd
 
+\-- import: fastn-community.github.io/arya-font-typography
+
 \-- component page:
 caption title:
 body body:
@@ -169,7 +171,8 @@ Ipsum has been the industry’s standard dummy
 role: $inherited.types.heading-medium
 color: $inherited.colors.text
 
-\-- end: page
+\-- end: my-ds.page
+
 
 -- ds.rendered.output:
 
