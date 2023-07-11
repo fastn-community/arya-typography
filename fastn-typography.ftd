@@ -1,7 +1,7 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/forest-theme as ds
 -- import: fifthtry.github.io/package-doc/footer
--- import: fastn-community.github.io/arya-font-typography
+-- import: fastn-community.github.io/arya-typography
 
 
 
@@ -9,7 +9,7 @@
 
 -- ds.page: 
 show-footer: true
-site-name: `arya-font-typography`
+site-name: `arya-typography`
 
 -- ds.page.footer:
 
@@ -17,14 +17,14 @@ site-name: `arya-font-typography`
 
 -- end: ds.page.footer
 
--- pd.package: arya-font-typography package
-name: fastn-community.github.io/arya-font-typography
+-- pd.package: arya-typography package
+name: fastn-community.github.io/arya-typography
 
-Below are our default fastn `inherited` font types of arya-font-typography.
+Below are our default fastn `inherited` font types of arya-typography.
 
 
 -- display-type:
-types: $arya-font-typography.types
+types: $arya-typography.types
 
 
 -- end: ds.page
