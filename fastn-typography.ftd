@@ -1,24 +1,14 @@
--- import: fifthtry.github.io/package-doc/doc as pd
--- import: fifthtry.github.io/package-doc/forest-theme as ds
--- import: fifthtry.github.io/package-doc/footer
 -- import: fastn-community.github.io/arya-typography
 
 
 
 
 
--- ds.page: 
-show-footer: true
-site-name: `arya-typography`
-
--- ds.page.footer:
-
--- footer.fastn-footer:
-
--- end: ds.page.footer
-
--- pd.package: arya-typography package
-name: fastn-community.github.io/arya-typography
+-- ds.doc-home: Arya Typography
+license-url: https://github.com/fastn-community/arya-typography/blob/main/LICENSE
+current-package: fastn-community.github.io/arya-typography
+site-title: Arya Typography
+github-url: https://github.com/fastn-community/arya-typography
 
 Below are our default fastn `inherited` font types of arya-typography.
 
@@ -27,7 +17,7 @@ Below are our default fastn `inherited` font types of arya-typography.
 types: $arya-typography.types
 
 
--- end: ds.page
+-- end: ds.doc-home
 
 
 
@@ -44,7 +34,12 @@ ftd.type-data types:
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.background.base
+
+-- ds.header: Headings
+
+-- arya-typography.types-box: 
+mobile: $arya-typography.heading-hero-mobile
+;;desktop: $arya-typography.heading-hero-desktop
 
 -- heading-box: \$inherited.types.heading-hero
 line-height: 60
