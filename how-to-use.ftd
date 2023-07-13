@@ -15,13 +15,13 @@ lang: ftd
 
 \-- fastn.dependency: fastn-community.github.io/arya-typography
 
--- ds.header: Method 1: for documentation templates like [doc-site](https://fastn-community.github.io/doc-site/types/) 
+-- ds.header: Option 1: for documentation templates like [doc-site](https://fastn-community.github.io/doc-site/types/) 
 
 Follow below steps:
 
 -- ds.markdown:
 
-Now modify `FASTN/ds.ftd` module which is already added inside your 
+Modify `FASTN/ds.ftd` module which is already added inside your 
 [doc-site](https://fastn-community.github.io/doc-site/types/) 
 package.
 
@@ -42,7 +42,7 @@ lang: ftd
 \-- import: fastn-community.github.io/arya-typography as typo
 
 
--- ds.header: Method 2: for custom [fastn](https://fastn.com/) projects
+-- ds.header: Option 2: for custom [fastn](https://fastn.com/) projects
 
 -- cb.code: Import `arya-typography` inside your `ftd` file
 lang: ftd
@@ -54,8 +54,10 @@ lang: ftd
 
 Now add `$typo.types` to your component, as shown in below example:
 
--- cb.code: Copy below code snippet inside your `ftd` file, then deploye and test
+-- cb.code: Copy below code snippet inside your `ftd` file, then deploy and test
 lang: ftd
+
+\-- example: This is example of types used from `arya-typography`
 
 \-- component example:
 caption title:

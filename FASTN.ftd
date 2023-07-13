@@ -3,6 +3,7 @@
 -- fastn.package: fastn-community.github.io/arya-typography
 
 -- fastn.dependency: fastn-community.github.io/site-doc
+-- fastn.dependency: fastn-community.github.io/opensans-typography
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/typography
 -- fastn.dependency: fastn-community.github.io/arya-font
@@ -11,6 +12,7 @@
 -- fastn.auto-import: fastn-community.github.io/site-doc as ds
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/typography as tf
+-- fastn.auto-import: fastn-community.github.io/arya-typography/assets
 
 
 -- fastn.sitemap:
@@ -20,4 +22,4 @@
 
 - Overview: index.html
 - How to use: how-to-use/
-- fastn typography: fastn-typography/
+- fastn Inherited Types: fastn-typography/

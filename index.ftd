@@ -1,4 +1,6 @@
+-- import: fastn-community.github.io/opensans-typography
 -- import: fastn-community.github.io/arya-font/assets as arya-assets
+
 
 -- ds.doc-home: Arya Typography
 license-url: https://github.com/fastn-community/arya-typography/blob/main/LICENSE
@@ -515,23 +517,342 @@ spacing.fixed.px: 16
 
 
 -- component types-box:
+optional caption name:
+string title:
 ftd.type mobile:
+ftd.type desktop:
+ftd.responsive-type types-role: 
+string types-property: $ftd.clean-code(a = $types-box.name, lang = ftd)
+boolean $mouse-in: false
+string $copy-text: null
 
 -- ftd.column:
 width: fill-container
+padding-vertical.px: 16
 
 -- ftd.row:
+width: fill-container
 
--- ftd.text: font-family:
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
-
--- ftd.text: $types-box.mobile.font-family
+-- ftd.text: $types-box.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+width.fixed.percent: 20
+
+-- ftd.column:
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border-strong
+border-style: dashed
+padding-bottom.px: 24
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 16
+
+-- ftd.text: $types-box.name
+if: { types-box.name != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.image:
+;;if: { types-box.name == "null" && types-box.mouse-in }
+src: $assets.files.assets.copy-hover.svg
+src if { types-box.mouse-in }: $assets.files.assets.copy.svg
+$on-mouse-enter$: $ftd.set-bool($a = $types-box.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $types-box.mouse-in, v = false)
+$on-click$: $ftd.copy-to-clipboard(a = $types-box.types-property)
+$on-click$: $ftd.set-string($a = $types-box.copy-text, v = Copied!)
+width.fixed.px: 12
+$on-mouse-leave$: $ftd.set-string($a = $types-box.copy-text, v = null)
+
+-- ftd.row:
+align-content: center
+spacing: space-between
+
+-- ftd.image:
+if: { types-box.copy-text != "null" }
+src: $assets.files.assets.tick-icon.svg
+width.fixed.px: 12
+
+-- ftd.text: $types-box.copy-text
+if: { types-box.copy-text != "null" }
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.text:
+role: $types-box.types-role
+color: $inherited.colors.text-strong
+padding-vertical.px: 24
+
+The quick brown fox jumps over the lazy dog.
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 4
+wrap: true
+width: fill-container
+align-self: start
+opacity: 0.6
+
+-- ftd.text: Mobile:
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: font-family:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $types-box.mobile.font-family
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: font-size:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.mobile.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: font-weight:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.mobile.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: line-height:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.mobile.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: letter-spacing:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.mobile.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 4
+wrap: true
+width: fill-container
+align-self: start
+opacity: 0.6
+
+-- ftd.text: Desktop:
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: font-family:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.text: $types-box.desktop.font-family
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: font-size:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.mobile.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: font-weight:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.desktop.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: line-height:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.desktop.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: |
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: letter-spacing:
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.integer: $types-box.desktop.weight
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: types-box
+
+
+
+
+
+
+
+
+
+
+-- component types-header:
+caption title:
+children wrapper:
+optional string id:
+ftd.type-data types: $opensans-typography.types
+boolean $is-open: false
+
+-- ftd.column:
+width: fill-container
+id: $types-header.id
+
+-- ftd.row:
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border-strong
+margin-bottom.px: 24
+spacing.fixed.px: 24
+$on-click$: $ftd.toggle($a = $types-header.is-open)
+padding-bottom.px: 6
+
+-- ftd.image:
+if: { !types-header.is-open }
+src: $assets.files.assets.down-arrow.svg
+align-self: center
+
+-- ftd.image:
+if: { types-header.is-open }
+src: $assets.files.assets.right-arrow.svg
+align-self: center
+
+-- ftd.text: $types-header.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+region: h2
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { types-header.is-open }
+width: fill-container
+children: $types-header.wrapper
+margin-bottom.px: 24
+padding-left.px: 40
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: types-header
