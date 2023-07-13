@@ -1,0 +1,167 @@
+-- import: fastn-community.github.io/arya-typography
+
+
+
+
+
+-- ds.doc-home: Arya Typography - Inherited Types
+license-url: https://github.com/fastn-community/arya-typography/blob/main/LICENSE
+current-package: fastn-community.github.io/arya-typography
+site-title: Arya Typography
+github-url: https://github.com/fastn-community/arya-typography
+
+Below are our default fastn `inherited` font types of arya-typography.
+
+
+-- display-type:
+types: $arya-typography.types
+
+
+-- end: ds.doc-home
+
+
+
+
+
+
+
+
+
+
+
+-- component display-type:
+ftd.type-data types:
+
+-- ftd.column:
+width: fill-container
+
+-- arya-typography.types-header-new: **Headings**
+id: new-headings
+$is-open: true
+
+-- arya-typography.types-box: \$inherited.types.heading-hero
+title: Heading Hero
+types-role: $arya-typography.heading-hero
+mobile: $arya-typography.heading-hero-mobile
+desktop: $arya-typography.heading-hero-desktop
+
+-- arya-typography.types-box: \$inherited.types.heading-large
+title: Heading Large
+types-role: $arya-typography.heading-large
+mobile: $arya-typography.heading-large-mobile
+desktop: $arya-typography.heading-large-desktop
+
+-- arya-typography.types-box: \$inherited.types.heading-medium
+title: Heading Medium
+types-role: $arya-typography.heading-medium
+mobile: $arya-typography.heading-medium-mobile
+desktop: $arya-typography.heading-medium-desktop
+
+-- arya-typography.types-box: \$inherited.types.heading-small
+title: Heading Small
+types-role: $arya-typography.heading-small
+mobile: $arya-typography.heading-small-mobile
+desktop: $arya-typography.heading-small-desktop
+
+-- arya-typography.types-box: \$inherited.types.heading-tiny
+title: Heading Tiny
+types-role: $arya-typography.heading-tiny
+mobile: $arya-typography.heading-tiny-mobile
+desktop: $arya-typography.heading-tiny-desktop
+
+-- end: arya-typography.types-header-new
+
+-- arya-typography.types-header-new: **Copy**
+id: new-copy
+
+-- arya-typography.types-box: \$inherited.types.copy-large
+title: copy-large
+types-role: $arya-typography.copy-large
+mobile: $arya-typography.copy-large-mobile
+desktop: $arya-typography.copy-large-desktop
+
+-- arya-typography.types-box: \$inherited.types.copy-regular
+title: copy-regular
+types-role: $arya-typography.copy-regular
+mobile: $arya-typography.copy-regular-mobile
+desktop: $arya-typography.copy-regular-desktop
+
+-- arya-typography.types-box: \$inherited.types.copy-small
+title: copy-small
+types-role: $arya-typography.copy-small
+mobile: $arya-typography.copy-small-mobile
+desktop: $arya-typography.copy-small-desktop
+
+-- end: arya-typography.types-header-new
+
+-- arya-typography.types-header-new: **Buttons**
+id: new-button
+
+-- arya-typography.types-box: \$inherited.types.button-large
+title: button-large
+types-role: $arya-typography.button-large
+mobile: $arya-typography.button-large-mobile
+desktop: $arya-typography.button-large-desktop
+
+-- arya-typography.types-box: \$inherited.types.button-medium
+title: button-medium
+types-role: $arya-typography.button-medium
+mobile: $arya-typography.button-medium-mobile
+desktop: $arya-typography.button-medium-desktop
+
+-- arya-typography.types-box: \$inherited.types.button-small
+title: button-small
+types-role: $arya-typography.button-small
+mobile: $arya-typography.button-small-mobile
+desktop: $arya-typography.button-small-desktop
+
+-- arya-typography.types-box: \$inherited.types.link
+title: link
+types-role: $arya-typography.link
+mobile: $arya-typography.link-mobile
+desktop: $arya-typography.link-desktop
+
+-- end: arya-typography.types-header-new
+
+-- arya-typography.types-header-new: **Labels**
+id: new-label
+
+-- arya-typography.types-box: \$inherited.types.label-large
+title: label-large
+types-role: $arya-typography.label-large
+mobile: $arya-typography.label-large-mobile
+desktop: $arya-typography.label-large-desktop
+
+-- arya-typography.types-box: \$inherited.types.label-small
+title: label-small
+types-role: $arya-typography.label-small
+mobile: $arya-typography.label-small-mobile
+desktop: $arya-typography.label-small-desktop
+
+-- end: arya-typography.types-header-new
+
+-- arya-typography.types-header-new: **Specialized Text**
+
+-- arya-typography.types-box: \$inherited.types.fine-print
+title: fine-print
+types-role: $arya-typography.fine-print
+mobile: $arya-typography.fine-print-mobile
+desktop: $arya-typography.fine-print-desktop
+
+-- arya-typography.types-box: \$inherited.types.blockquote
+title: blockquote
+types-role: $arya-typography.blockquote
+mobile: $arya-typography.blockquote-mobile
+desktop: $arya-typography.blockquote-desktop
+
+-- arya-typography.types-box: \$inherited.types.source-code
+title: source-code
+types-role: $arya-typography.source-code
+mobile: $arya-typography.source-code-mobile
+desktop: $arya-typography.source-code-desktop
+
+-- end: arya-typography.types-header-new
+
+-- end: ftd.column
+
+-- end: display-type

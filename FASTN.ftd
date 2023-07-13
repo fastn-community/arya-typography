@@ -4,6 +4,7 @@
 
 -- fastn.dependency: fastn-community.github.io/site-doc
 -- fastn.dependency: fastn-community.github.io/opensans-typography
+-- fastn.dependency: fastn-community.github.io/bling
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/typography
 -- fastn.dependency: fastn-community.github.io/arya-font
@@ -22,4 +23,5 @@
 
 - Overview: index.html
 - How to use: how-to-use/
-- fastn Inherited Types: fastn-typography/
+- fastn Inherited Types UI - 1: fastn-typography/
+- fastn Inherited Types UI - 2: fastn-typography-new/

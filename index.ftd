@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/opensans-typography
+-- import: fastn-community.github.io/bling/collapse
 -- import: fastn-community.github.io/arya-font/assets as arya-assets
 
 
@@ -856,3 +857,40 @@ padding-left.px: 40
 -- end: ftd.column
 
 -- end: types-header
+
+
+
+
+
+
+
+
+
+
+-- component types-header-new:
+caption title:
+children wrapper:
+optional string id:
+ftd.type-data types: $opensans-typography.types
+boolean $is-open: false
+
+-- ftd.column:
+width: fill-container
+id: $types-header-new.id
+
+-- collapse.collapse: $types-header-new.title
+$is-open: $types-header-new.is-open
+
+-- ftd.column:
+width: fill-container
+children: $types-header-new.wrapper
+margin-bottom.px: 24
+padding-left.px: 40
+
+-- end: ftd.column
+
+-- end: collapse.collapse
+
+-- end: ftd.column
+
+-- end: types-header-new
