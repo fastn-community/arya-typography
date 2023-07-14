@@ -17,30 +17,58 @@ lang: ftd
 
 -- ds.header: Option 1: for documentation templates like [doc-site](https://fastn-community.github.io/doc-site/types/) 
 
-Follow below steps:
+To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
+`arya-typography` dependency into it.
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/arya-typography
 
 -- ds.markdown:
 
-Modify `FASTN/ds.ftd` module which is already added inside your 
-[doc-site](https://fastn-community.github.io/doc-site/types/) 
+Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
 package.
 
-Replace below line of `FASTN/ds.ftd` file:
+Import `arya-typography` dependency into `FASTN/ds.ftd`
 
 -- cb.code:
 lang: ftd
 
-\-- import: fastn-community.github.io/roboto-typography as typo
+\-- import: fastn-community.github.io/arya-typography
 
 -- ds.markdown:
 
-with:
+Change `-- component page` `typography` property `ftd.type-data typography:
+$roboto-typography.types` with `ftd.type-data typography: $arya-typography.types`
 
--- cb.code:
+replace this line of `FASTN/ds.ftd` file:
+
+-- ds.code: 
 lang: ftd
 
-\-- import: fastn-community.github.io/arya-typography as typo
+\-- ftd.type-data typography: $roboto-typography.types
 
+-- ds.markdown:
+
+ with:
+
+-- ds.code:
+lang: ftd
+
+\-- ftd.type-data typography: $arya-typography.types
+
+-- ds.markdown: 
+
+Done! now deploy your fastn package, you’ll see `arya-typography` applied to
+your pages.
+
+-- ftd.column:
+width: fill-container
+border-top-width.px: 1
+border-color: $inherited.colors.border
+
+-- end: ftd.column
 
 -- ds.header: Option 2: for custom [fastn](https://fastn.com/) projects
 
@@ -68,5 +96,10 @@ role: $inherited.types.heading-hero
 color: $inherited.colors.text
 
 \-- end: example
+
+-- ds.markdown: 
+
+Done! now deploy your fastn package, you’ll see `arya-typography` applied to
+your pages.
 
 -- end: ds.doc-home
