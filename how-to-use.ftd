@@ -1,0 +1,105 @@
+
+-- ds.doc-home: Arya Typography
+license-url: https://github.com/fastn-community/arya-typography/blob/main/LICENSE
+current-package: fastn-community.github.io/arya-typography
+site-title: Arya Typography
+github-url: https://github.com/fastn-community/arya-typography
+
+-- ds.header: How to use arya typography
+
+To use `arya-typography` into your [fastn](https://fastn.com/) web project, 
+add below into `FASTN.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/arya-typography
+
+-- ds.header: Option 1: for documentation templates like [doc-site](https://fastn-community.github.io/doc-site/types/) 
+
+To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
+`arya-typography` dependency into it.
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/arya-typography
+
+-- ds.markdown:
+
+Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
+package.
+
+Import `arya-typography` dependency into `FASTN/ds.ftd`
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastn-community.github.io/arya-typography
+
+-- ds.markdown:
+
+Change `-- component page` `typography` property `ftd.type-data typography:
+$roboto-typography.types` with `ftd.type-data typography: $arya-typography.types`
+
+replace this line of `FASTN/ds.ftd` file:
+
+-- ds.code: 
+lang: ftd
+
+\-- ftd.type-data typography: $roboto-typography.types
+
+-- ds.markdown:
+
+ with:
+
+-- ds.code:
+lang: ftd
+
+\-- ftd.type-data typography: $arya-typography.types
+
+-- ds.markdown: 
+
+Done! now deploy your fastn package, you’ll see `arya-typography` applied to
+your pages.
+
+-- ftd.column:
+width: fill-container
+border-top-width.px: 1
+border-color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- ds.header: Option 2: for custom [fastn](https://fastn.com/) projects
+
+-- cb.code: Import `arya-typography` inside your `ftd` file
+lang: ftd
+
+\-- import: fastn-community.github.io/arya-typography as typo
+
+
+-- ds.markdown:
+
+Now add `$typo.types` to your component, as shown in below example:
+
+-- cb.code: Copy below code snippet inside your `ftd` file, then deploy and test
+lang: ftd
+
+\-- example: This is example of types used from `arya-typography`
+
+\-- component example:
+caption title:
+ftd.type-data types: $typo.types
+
+\-- ftd.text: $example.title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text
+
+\-- end: example
+
+-- ds.markdown: 
+
+Done! now deploy your fastn package, you’ll see `arya-typography` applied to
+your pages.
+
+-- end: ds.doc-home

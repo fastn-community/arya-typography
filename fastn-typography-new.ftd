@@ -35,8 +35,8 @@ ftd.type-data types:
 -- ftd.column:
 width: fill-container
 
--- arya-typography.types-header: Headings
-id: headings
+-- arya-typography.types-header-new: **Headings**
+id: new-headings
 $is-open: true
 
 -- arya-typography.types-box: \$inherited.types.heading-hero
@@ -69,10 +69,10 @@ types-role: $arya-typography.heading-tiny
 mobile: $arya-typography.heading-tiny-mobile
 desktop: $arya-typography.heading-tiny-desktop
 
--- end: arya-typography.types-header
+-- end: arya-typography.types-header-new
 
--- arya-typography.types-header: Copy
-id: copy
+-- arya-typography.types-header-new: **Copy**
+id: new-copy
 
 -- arya-typography.types-box: \$inherited.types.copy-large
 title: copy-large
@@ -92,10 +92,10 @@ types-role: $arya-typography.copy-small
 mobile: $arya-typography.copy-small-mobile
 desktop: $arya-typography.copy-small-desktop
 
--- end: arya-typography.types-header
+-- end: arya-typography.types-header-new
 
--- arya-typography.types-header: Buttons
-id: button
+-- arya-typography.types-header-new: **Buttons**
+id: new-button
 
 -- arya-typography.types-box: \$inherited.types.button-large
 title: button-large
@@ -121,10 +121,10 @@ types-role: $arya-typography.link
 mobile: $arya-typography.link-mobile
 desktop: $arya-typography.link-desktop
 
--- end: arya-typography.types-header
+-- end: arya-typography.types-header-new
 
--- arya-typography.types-header: Labels
-id: label
+-- arya-typography.types-header-new: **Labels**
+id: new-label
 
 -- arya-typography.types-box: \$inherited.types.label-large
 title: label-large
@@ -138,9 +138,9 @@ types-role: $arya-typography.label-small
 mobile: $arya-typography.label-small-mobile
 desktop: $arya-typography.label-small-desktop
 
--- end: arya-typography.types-header
+-- end: arya-typography.types-header-new
 
--- arya-typography.types-header: Specialized Text
+-- arya-typography.types-header-new: **Specialized Text**
 
 -- arya-typography.types-box: \$inherited.types.fine-print
 title: fine-print
@@ -160,7 +160,7 @@ types-role: $arya-typography.source-code
 mobile: $arya-typography.source-code-mobile
 desktop: $arya-typography.source-code-desktop
 
--- end: arya-typography.types-header
+-- end: arya-typography.types-header-new
 
 -- end: ftd.column
 
